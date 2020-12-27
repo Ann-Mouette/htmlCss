@@ -1,0 +1,438 @@
+/* line 1, ../sass/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 13, ../sass/_reset.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/_reset.sass */
+body, html {
+  height: 100%;
+}
+
+/* line 17, ../sass/_reset.sass */
+img, fieldset, a img {
+  border: none;
+}
+
+/* line 19, ../sass/_reset.sass */
+img, embed, object, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 22, ../sass/_reset.sass */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* line 27, ../sass/_reset.sass */
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+/* line 30, ../sass/_reset.sass */
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 33, ../sass/_reset.sass */
+textarea {
+  overflow: auto;
+}
+
+/* line 35, ../sass/_reset.sass */
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 39, ../sass/_reset.sass */
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+/* line 42, ../sass/_reset.sass */
+ul, ol {
+  list-style-type: none;
+}
+
+/* line 44, ../sass/_reset.sass */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* line 2, ../sass/_common.sass */
+.su__input--fname, .su__pass-box {
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+/* line 6, ../sass/_common.sass */
+.su__bg, .su__input--lname, .su__action, .su__cpass-box {
+  float: right;
+  position: relative;
+  min-height: 1px;
+}
+
+/* line 20, ../sass/_common.sass */
+.su {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFF;
+}
+
+/* line 29, ../sass/_common.sass */
+.l-row {
+  *zoom: 1;
+}
+/* line 31, ../sass/lib/_mixins.sass */
+.l-row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* line 2, ../sass/_main.sass */
+.su__bg {
+  height: 920px;
+  width: 1090px;
+  background: transparent url(../img/su-face.jpg) no-repeat 0 0;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 17, ../sass/_main.sass */
+.su__field {
+  width: 570px;
+  height: 920px;
+  padding: 100px 85px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF;
+}
+/* line 25, ../sass/_main.sass */
+.su__field:not(:first-of-type) {
+  display: none;
+}
+/* line 27, ../sass/_main.sass */
+.su__heading {
+  width: 260px;
+  height: 50px;
+  margin: 0 auto;
+}
+/* line 31, ../sass/_main.sass */
+.su__sub-heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+/* line 38, ../sass/_main.sass */
+.su__fb-but {
+  display: block;
+  width: 310px;
+  height: 64px;
+  background: #43619c url(../img/icon-fb.svg) no-repeat 25px 17px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 75px;
+  padding-top: 19px;
+}
+/* line 48, ../sass/_main.sass */
+.su__or {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #9f9f9f;
+  text-transform: uppercase;
+}
+/* line 54, ../sass/_main.sass */
+.su__input {
+  font-size: 14px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 352, ../sass/lib/_mixins.sass */
+.su__input:-ms-input-placeholder {
+  color: #222;
+}
+/* line 354, ../sass/lib/_mixins.sass */
+.su__input:-moz-placeholder {
+  color: #222;
+}
+/* line 356, ../sass/lib/_mixins.sass */
+.su__input::-moz-placeholder {
+  color: #222;
+}
+/* line 358, ../sass/lib/_mixins.sass */
+.su__input::-webkit-input-placeholder {
+  color: #222;
+}
+/* line 360, ../sass/lib/_mixins.sass */
+.su__input::placeholder {
+  color: #222;
+}
+/* line 368, ../sass/lib/_mixins.sass */
+.su__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 370, ../sass/lib/_mixins.sass */
+.su__input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 372, ../sass/lib/_mixins.sass */
+.su__input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 374, ../sass/lib/_mixins.sass */
+.su__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 62, ../sass/_main.sass */
+.su__help {
+  font-size: 12px;
+  color: #969695;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+/* line 67, ../sass/_main.sass */
+.su__input--fname {
+  width: 180px;
+}
+/* line 70, ../sass/_main.sass */
+.su__input--lname {
+  width: 180px;
+}
+/* line 73, ../sass/_main.sass */
+.su__input--email {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+/* line 77, ../sass/_main.sass */
+.su__action {
+  width: 130px;
+  height: 50px;
+  background: #ce4483;
+  color: #FFF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 85, ../sass/_main.sass */
+.su__action:hover {
+  background: #e1e1e1;
+}
+/* line 87, ../sass/_main.sass */
+.su__pager {
+  margin-top: 80px;
+  text-align: center;
+}
+/* line 90, ../sass/_main.sass */
+.su__pager-item {
+  display: inline-block;
+  background: #e1e1e1;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+/* line 96, ../sass/_main.sass */
+.su__pager-item--is-active {
+  background: #ce4483;
+}
+/* line 98, ../sass/_main.sass */
+.su__input--zcode {
+  width: 100%;
+  margin-top: 140px;
+}
+/* line 101, ../sass/_main.sass */
+.su__input--phone {
+  width: 100%;
+  margin-top: 45px;
+}
+/* line 104, ../sass/_main.sass */
+.su__input--phone ~ p.su__help {
+  margin-bottom: 45px;
+}
+/* line 106, ../sass/_main.sass */
+.su__pass-box {
+  width: 180px;
+}
+/* line 109, ../sass/_main.sass */
+.su__cpass-box {
+  width: 180px;
+  margin-bottom: 135px;
+}
+/* line 113, ../sass/_main.sass */
+.su__action--prev {
+  background: transparent url(../img/arrow-left.svg) no-repeat 5px 17px;
+  color: #222;
+  text-transform: none;
+  font-size: 14px;
+  float: left;
+}
+/* line 119, ../sass/_main.sass */
+.su__add-photo {
+  margin: 95px auto 50px;
+  width: 200px;
+  height: 200px;
+  background: transparent url(../img/placeholder.svg) no-repeat 0 0;
+  text-align: center;
+}
+/* line 125, ../sass/_main.sass */
+.su__add-photo > a {
+  color: #ce4483;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 120px;
+}
+/* line 130, ../sass/_main.sass */
+.su__ready-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+/* line 134, ../sass/_main.sass */
+.su__ready-address {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #969695;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 141, ../sass/_main.sass */
+.su__agree-box {
+  margin-bottom: 50px;
+  position: relative;
+}
+/* line 144, ../sass/_main.sass */
+.su__agree-label {
+  display: block;
+  padding-left: 30px;
+}
+/* line 147, ../sass/_main.sass */
+.su__input--agree {
+  position: absolute;
+  top: 15px;
+}
+/* line 150, ../sass/_main.sass */
+.su__agree-box > .su__help {
+  padding-left: 30px;
+  font-size: 14px;
+  margin-top: 0;
+}
+/* line 154, ../sass/_main.sass */
+.su__agree-box > .su__help a {
+  color: #ce4483;
+}
+/* line 156, ../sass/_main.sass */
+.su__action--finish {
+  background: #e1e1e1;
+}
+/* line 158, ../sass/_main.sass */
+.su__action--finish:hover {
+  background: #ce4483;
+}
+
+@media (max-width: 1200px) {
+  /* line 164, ../sass/_main.sass */
+  .su__bg {
+    width: 100%;
+  }
+
+  /* line 166, ../sass/_main.sass */
+  .su__field {
+    left: 50%;
+    margin-left: -275px;
+  }
+}
+@media (max-width: 990px) {
+  /* line 171, ../sass/_main.sass */
+  .su {
+    background: #969695;
+    height: 920px;
+  }
+
+  /* line 174, ../sass/_main.sass */
+  .su__bg {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  /* line 178, ../sass/_main.sass */
+  .su {
+    background: #FFF;
+  }
+
+  /* line 180, ../sass/_main.sass */
+  .su__field {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 186, ../sass/_main.sass */
+  .su__input, .su__pass-box, .su__cpass-box {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 189, ../sass/_main.sass */
+  .su__input--fname, .su__input--phone ~ .su__help, .su__pass-box {
+    margin-bottom: 40px;
+  }
+
+  /* line 191, ../sass/_main.sass */
+  .su__input--email {
+    margin-top: 40px;
+  }
+
+  /* line 193, ../sass/_main.sass */
+  .su__cpass-box, .su__agree-box {
+    margin-bottom: 80px;
+  }
+
+  /* line 195, ../sass/_main.sass */
+  .su__input--agree {
+    width: 15px;
+    height: 15px;
+  }
+}

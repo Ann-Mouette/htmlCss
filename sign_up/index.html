@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	
+	
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+	<div class="su">
+		<div class="su__bg"></div>
+		<div class="su__form">
+			<!-- step 1 -->
+			<fieldset class="su__field">
+				<h2 class="su__heading">
+					<a href=""><img src="img/logo-1.svg" alt="lisser' logo" width="260" height="50"></a>
+				</h2>
+				<h3 class="su__sub-heading">SIGN UP</h3>
+				<a href="" class="su__fb-but">SIGN UP WITH FACEBOOK</a>
+				<p class="su__or">—or—</p>
+				<div class="l-row">
+					<input type="text" name="fname" placeholder="First Name" class="su__input su__input--fname"/>
+					<input type="text" name="lname" placeholder="Last Name" class="su__input su__input--lname" />
+				</div>
+				<input type="text" name="email" placeholder="Email" class="su__input su__input--email" />
+				<div class="l-row">
+					<input type="button" name="next" class="su__action su__action--next" value="Next" />
+				</div>
+				<div class="l-row">
+					<ul class="su__pager">
+						<li class="su__pager-item su__pager-item--is-active"></li>
+						<li class="su__pager-item"></li>
+						<li class="su__pager-item"></li>
+					</ul>
+				</div>
+			</fieldset>
+			<!-- end of step 1 -->
+
+			<!-- step 2 -->
+			<fieldset class="su__field">
+				<h2 class="su__heading">
+					<a href=""><img src="img/logo-1.svg" alt="lisser' logo" width="260" height="50"></a>
+				</h2>
+				<input type="text" name="zcode" placeholder="Zip Code" class="su__input su__input--zcode" />
+				<p class="su__help">Example: 9005</p>
+				<input type="text" name="phone" placeholder="Phone" class="su__input su__input--phone" />
+				<p class="su__help">Example: 1-541-754-3010</p>
+				<div class="l-row">
+					<div class="su__pass-box">
+						<input type="password" name="pass" placeholder="Password" class="su__input su__input--pass" />
+						<p class="su__help">Minimum length 8 characters</p>
+					</div>
+					<div class="su__cpass-box">
+						<input type="password" name="cpass" placeholder="Confirm Password" class="su__input su__input--cpass" />
+						<p class="su__help">Re-type your password</p>
+					</div>
+				</div>
+				<div class="l-row">
+					<input type="button" name="prev" class="su__action su__action--prev" value="Previous" />
+					<input type="button" name="next" class="su__action su__action--next" value="Next" />
+				</div>
+				<div class="l-row">
+					<ul class="su__pager">
+						<li class="su__pager-item"></li>
+						<li class="su__pager-item su__pager-item--is-active"></li>
+						<li class="su__pager-item"></li>
+					</ul>
+				</div>
+			</fieldset>
+			<!-- end of step 2 -->
+
+			<!-- step 3 -->
+			<fieldset class="su__field">
+				<h2 class="su__heading">
+					<a href=""><img src="img/logo-1.svg" alt="lisser' logo" width="260" height="50"></a>
+				</h2>
+				<div class="su__add-photo">
+					<a href="">ADD PHOTO</a>
+				</div>
+				<p class="su__ready-name">KATHRYN NORTON</p>
+				<p class="su__ready-address">LOS ANGELES, LA 90005</p>
+				<div class="su__agree-box">
+					<label for="agree" class="su__agree-label">I AGREE</label>
+					<input type="checkbox" id="agree" name="agree" class="su__input su__input--agree" value="agree" />
+					<p class="su__help">I have read and agree to the <a href="">Terms & Conditions</a>.</p>
+				</div>
+				<div class="l-row">
+					<input type="button" name="prev" class="su__action su__action--prev" value="Previous" />
+					<input type="submit" name="finish" class="su__action su__action--finish" value="Finish" />
+				</div>
+				<div class="l-row">
+					<ul class="su__pager">
+						<li class="su__pager-item"></li>
+						<li class="su__pager-item"></li>
+						<li class="su__pager-item su__pager-item--is-active"></li>
+					</ul>
+				</div>
+			</fieldset>
+			<!-- end of step 3 -->
+		</div>
+	</div>
+<!-- load scripts -->
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
